@@ -77,7 +77,7 @@ textarea:focus, input:focus {
 }
 
 .container__section1__botoes__button2 {
-    background-color: #FFFFFF;
+    background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
     height: 67px;
     width: 328px;
@@ -89,23 +89,21 @@ textarea:focus, input:focus {
 }
 
 
-.section__2 { 
+.container__section2 { 
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    width: 380px;
-    height: 800px;
+    width: 400px;
+    height: 600px;
     margin-right: 40px;
     margin-top: -100px;
-    position: relative;
-
+    padding: 150px 32px 50px 32px  ;
 }
 
-.imagem_svg {
+.container__section2__imagem_svg {
     height: 304px;
     width: 336px;
-    margin-top: 163px;
 }
 
 h1 {
@@ -124,17 +122,52 @@ p {
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-     word-wrap: break-word;
-     text-align: center;
+    word-wrap: break-word;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.container__section2__divBotao {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container__section2__divBotao__botaoCopiar{
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .rodape {
-    color: #FFFFFF;
+    display: flex;
+    color: #0A3871;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    margin-top: 10px;
-    padding: 23px;
-    background-color: #0A3871;
+    margin-top: 5px;
+    padding: 0px;
+    background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
     font-size: 16px ;
     font-weight: normal;
-}        
+    line-height: 24px;
+    word-wrap: break-word;
+    gap: 15px;
+}      
+
+.icons_rodape {
+    position: relative;
+    margin-top: -35px !important;
+    padding: 0 !important;
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+}
