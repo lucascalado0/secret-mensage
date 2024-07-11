@@ -65,12 +65,6 @@ function copiarTexto() {
     window.getSelection().removeAllRanges();
 
     ocultarImagem();
-
-
-    // Limpa a mensagem após alguns segundos
-    setTimeout(() => {
-        asideContentMessage.innerText = '';
-    }, 3000); // A mensagem será removida após 3 segundos (3000 milissegundos)
 }
 
 
