@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Decodificador de Textos</title>
 </head>
 
@@ -12,27 +13,46 @@
     <header class="header_logo"><img src="assets/Logo_alura.png" alt="Logo alura"></header>
     <main class="container">
         <section class="container__section1">
-            <div> 
-                <textarea placeholder="Digite o seu texto" class="container__section1__areadotexto"></textarea>
+            <div>
+                <textarea placeholder="Digite o seu texto" class="container__section1__areadotexto"
+                    id="campoTexto"></textarea>
             </div>
-            <div  class="container__section1__alerta" >
+            <div class="container__section1__alerta">
                 <img src="assets/atencao.png" alt="">
-                <h4>Apenas letras minusculas e sem acento.</h4>
+                <h4>Apenas letras minúsculas e sem acento.</h4>
             </div>
             <div class="container__section1__botoes">
-                <button type="button" class="container__section1__botoes__button1">Criptografar</button>
-                <button type="button" class="container__section1__botoes__button2">Descriptografar</button>
+                <button type="button" class="container__section1__botoes__button1"
+                    onclick="criptografar()">Criptografar</button>
+                <button type="button" class="container__section1__botoes__button2"
+                    onclick="descriptografar()">Descriptografar</button>
             </div>
         </section>
-        <section class="section__2">
-            <img src="assets/teste.svg" alt="" class="imagem_svg">
-            <h1>Nenhuma mensagem encontrada</h1>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <section class="container__section2">
+            <div>
+                <img src="assets/menino.svg" alt="" class="container__section2__imagem_svg" id="imagem">
+                <h1 id="mensagemTitulo"></h1>
+                <p id="mensagemFinal"></p>
+            </div>
+
+            <div class="container__section2__divBotao"><button type="button"
+                    class="container__section2__divBotao__botaoCopiar" onclick="copiarTexto()">Copiar</button></div>
         </section>
     </main>
     <footer class="rodape">
-        <h3>Desenvolvido por Lucas Vinicius</h3>
+        <h3>Desenvolvido por Lucas Calado - 2024</h3>
+        <div>
+            <a href="https://www.linkedin.com/in/lucascalado1/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    class="icons_rodape" /></a>
+            <a href="https://github.com/lucascalado0" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    class="icons_rodape" />
+            </a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
