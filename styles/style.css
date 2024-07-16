@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: #495057;
+    --cor-quartenaria: #FFFFFF;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #F3F5FC;
+    background-color: var(--cor-primaria);
 }
 
 .header_logo {
@@ -32,7 +39,7 @@ textarea:focus, input:focus {
 }
 
 ::-webkit-input-placeholder {
-    color: #0A3871;
+    color: var(--cor-secundaria);
  }
 
  textarea {
@@ -41,17 +48,17 @@ textarea:focus, input:focus {
  }
 .container__section1__areadotexto{
     font-size: 32px;
-    color: #0A3871;
+    color: var(--cor-secundaria);
     width: 150%;
     height: 500px;
     font-family: 'Inter', sans-serif;
-    background-color: #F3F5FC;
+    background-color: var(--cor-primaria);
 }
 
 .container__section1__alerta {
     display: flex;
     gap: 8px;
-    color: #495057;
+    color: var(--cor-terciaria);
     font-size: 12px;
     font-family: 'Inter', sans-serif;
     margin-top: 45px;
@@ -65,25 +72,25 @@ textarea:focus, input:focus {
 }
 
 .container__section1__botoes__button1 {
-    background-color: #0A3871;
+    background-color: var(--cor-secundaria);
     font-family: 'Inter', sans-serif;
     height: 67px;
     width: 328px;
     border-radius: 24px;
     border: none;
-    color: #FFFFFF;
+    color: var(--cor-quartenaria);
     font-size: 16px;
     font-weight: 400;
 }
 
 .container__section1__botoes__button2 {
-    background-color: #F3F5FC;
+    background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
     height: 67px;
     width: 328px;
     border-radius: 24px;
-    border: 1px solid #0A3871;
-    color: #0A3871;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
     font-size: 16px;
     font-weight: 400; 
 }
@@ -91,7 +98,7 @@ textarea:focus, input:focus {
 
 .container__section2 { 
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--cor-quartenaria);
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     width: 400px;
@@ -108,7 +115,7 @@ textarea:focus, input:focus {
 
 h1 {
     font-family: 'Inter', sans-serif;
-    color: #495057;
+    color: var(--cor-terciaria);
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
@@ -118,7 +125,7 @@ h1 {
 
 p {
     font-family: 'Inter', sans-serif;
-    color: #495057;
+    color: var(--cor-terciaria);
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
@@ -135,26 +142,26 @@ p {
 }
 
 .container__section2__divBotao__botaoCopiar{
-    background-color: #FFFFFF;
+    background-color: var(--cor-quartenaria);
     font-family: 'Inter', sans-serif;
     height: 67px;
     width: 328px;
     border-radius: 24px;
-    border: 1px solid #0A3871;
-    color: #0A3871;
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
     font-size: 16px;
     font-weight: 400;
 }
 
 .rodape {
     display: flex;
-    color: #0A3871;
+    color: var(--cor-secundaria);
     justify-content: center;
     flex-direction: column;
     text-align: center;
     margin-top: 5px;
     padding: 0px;
-    background-color: #F3F5FC;
+    background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
     font-size: 16px ;
     font-weight: normal;
