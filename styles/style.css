@@ -5,6 +5,8 @@
     --cor-secundaria: #0A3871;
     --cor-terciaria: #495057;
     --cor-quartenaria: #FFFFFF;
+
+    --fonte-primaria: 'Inter', sans-serif;
 }
 
 * {
@@ -51,7 +53,7 @@ textarea:focus, input:focus {
     color: var(--cor-secundaria);
     width: 150%;
     height: 500px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     background-color: var(--cor-primaria);
 }
 
@@ -60,7 +62,7 @@ textarea:focus, input:focus {
     gap: 8px;
     color: var(--cor-terciaria);
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     margin-top: 45px;
     margin-bottom: 16px ;
 }
@@ -73,7 +75,7 @@ textarea:focus, input:focus {
 
 .container__section1__botoes__button1 {
     background-color: var(--cor-secundaria);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     height: 67px;
     width: 328px;
     border-radius: 24px;
@@ -85,7 +87,7 @@ textarea:focus, input:focus {
 
 .container__section1__botoes__button2 {
     background-color: var(--cor-primaria);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     height: 67px;
     width: 328px;
     border-radius: 24px;
@@ -114,7 +116,7 @@ textarea:focus, input:focus {
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);
     font-size: 24px;
     font-weight: bold;
@@ -124,7 +126,7 @@ h1 {
 }
 
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);
     font-size: 16px;
     font-weight: normal;
@@ -143,7 +145,7 @@ p {
 
 .container__section2__divBotao__botaoCopiar{
     background-color: var(--cor-quartenaria);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     height: 67px;
     width: 328px;
     border-radius: 24px;
@@ -162,7 +164,7 @@ p {
     margin-top: 5px;
     padding: 0px;
     background-color: var(--cor-primaria);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 16px ;
     font-weight: normal;
     line-height: 24px;
